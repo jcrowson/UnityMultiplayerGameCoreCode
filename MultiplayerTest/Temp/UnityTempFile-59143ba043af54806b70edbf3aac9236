@@ -6,13 +6,13 @@
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp.dll'
+-r:'Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll'
+-r:'Assets/Photon Unity Networking/Plugins/PhotonNetwork/library/Photon3Unity3D.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
 -r:'/Applications/Unity/Unity.app/Contents/PlaybackEngines/iPhonePlayer/EditorExtensions/UnityEditor.iOS.Extensions.dll'
 -r:'/Applications/Unity/Unity.app/Contents/PlaybackEngines/BB10Player/EditorExtensions/UnityEditor.BB10.Extensions.dll'
 -r:'/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/EditorExtensions/UnityEditor.Android.Extensions.dll'
 -r:'/Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/4.3.4/Unity.PackageManager.dll'
--r:'Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll'
--r:'Assets/Photon Unity Networking/Plugins/PhotonNetwork/library/Photon3Unity3D.dll'
 -define:UNITY_STANDALONE_OSX
 -define:ENABLE_MICROPHONE
 -define:ENABLE_TEXTUREID_MAP

@@ -38,7 +38,11 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
+'Assets/Marco Polo/CharacterMotor.cs'
+'Assets/Marco Polo/FPSInputController.cs'
+'Assets/Marco Polo/MouseLook.cs'
 'Assets/Marco Polo/NetworkCharacter.cs'
+'Assets/Marco Polo/PlatformInputController.cs'
 'Assets/Marco Polo/RandomMatchmaker.cs'
 'Assets/Photon Unity Networking/Plugins/PhotonNetwork/CustomTypes.cs'
 'Assets/Photon Unity Networking/Plugins/PhotonNetwork/Enums.cs'
