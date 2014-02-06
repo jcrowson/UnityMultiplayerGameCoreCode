@@ -3,31 +3,29 @@ using System.Collections;
 
 public class IsometricCamera : MonoBehaviour {
 
-	private const int LevelArea = 100;
+	public  int LevelArea = 100;
+
+	public  int ScrollArea = 25;
+	
+	public  int ScrollSpeed = 25;
+	
+	public  int DragSpeed = 100;
 	
 	
 	
-	private const int ScrollArea = 25;
+	public  int ZoomSpeed = 25;
 	
-	private const int ScrollSpeed = 25;
+	public  int ZoomMin = 25;
 	
-	private const int DragSpeed = 100;
-	
-	
-	
-	private const int ZoomSpeed = 25;
-	
-	private const int ZoomMin = 25;
-	
-	private const int ZoomMax = 100;
+	public  int ZoomMax = 100;
 	
 	
 	
-	private const int PanSpeed = 50;
+	public  int PanSpeed = 50;
 	
-	private const int PanAngleMin = 50;
+	public  int PanAngleMin = 50;
 	
-	private const int PanAngleMax = 80;
+	public  int PanAngleMax = 80;
 	
 	
 	

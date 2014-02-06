@@ -76,7 +76,7 @@ public class RandomMatchmaker : Photon.MonoBehaviour {
 
 	void Update ()
 	{
-		Vector3 mousePos=new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f);
+		Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100);
 
 		if (Input.GetMouseButtonDown (0)) {
 			Vector3 wordPos;
