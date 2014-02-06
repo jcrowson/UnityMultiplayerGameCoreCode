@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Marco Polo\CharacterMotor.cs" />
      <Compile Include="Assets\Marco Polo\FPSInputController.cs" />
+     <Compile Include="Assets\Marco Polo\GameSetup.cs" />
      <Compile Include="Assets\Marco Polo\MouseLook.cs" />
      <Compile Include="Assets\Marco Polo\NetworkCharacter.cs" />
      <Compile Include="Assets\Marco Polo\PlatformInputController.cs" />
@@ -83,6 +84,7 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestBase.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\RigidbodyTest\NetworkInterpolatedTransform.cs" />
+     <None Include="Assets\cu_cat\Props\prop_readme.txt" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.xml" />
