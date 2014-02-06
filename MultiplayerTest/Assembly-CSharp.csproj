@@ -47,11 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Marco Polo\CharacterMotor.cs" />
+     <Compile Include="Assets\Marco Polo\Chat.cs" />
      <Compile Include="Assets\Marco Polo\FPSInputController.cs" />
      <Compile Include="Assets\Marco Polo\GameSetup.cs" />
      <Compile Include="Assets\Marco Polo\MouseLook.cs" />
      <Compile Include="Assets\Marco Polo\NetworkCharacter.cs" />
      <Compile Include="Assets\Marco Polo\PlatformInputController.cs" />
+     <Compile Include="Assets\Marco Polo\PlayerName.cs" />
      <Compile Include="Assets\Marco Polo\RandomMatchmaker.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />

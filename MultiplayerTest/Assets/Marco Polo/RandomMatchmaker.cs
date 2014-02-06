@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class RandomMatchmaker : Photon.MonoBehaviour {
+
+	private PhotonView myPhotonView;
+
 	
 	void Start()
 	{
@@ -33,14 +36,13 @@ public class RandomMatchmaker : Photon.MonoBehaviour {
 		CharacterMotor motor = monster.GetComponent<CharacterMotor>();
 		motor.enabled = true;
 
-		//MouseLook mouseLook = monster.GetComponent<MouseLook>();
-		//mouseLook.enabled = true;
-
 		Camera cam = monster.GetComponentInChildren<Camera>();
 		cam.enabled = true;
 
 		MouseLook mouseLookCamera = monster.GetComponentInChildren<MouseLook>();
 		mouseLookCamera.enabled = true;
+
+		myPhotonView = monster.GetComponent<PhotonView>();
 	
 	}
 
