@@ -42,6 +42,7 @@
 'Assets/Marco Polo/Chat.cs'
 'Assets/Marco Polo/FPSInputController.cs'
 'Assets/Marco Polo/GameSetup.cs'
+'Assets/Marco Polo/IsometricCamera.cs'
 'Assets/Marco Polo/MouseLook.cs'
 'Assets/Marco Polo/NetworkCharacter.cs'
 'Assets/Marco Polo/PlatformInputController.cs'

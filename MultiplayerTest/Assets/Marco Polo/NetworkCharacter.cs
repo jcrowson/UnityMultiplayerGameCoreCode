@@ -5,7 +5,8 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 
 	private Vector3 correctPlayerPos;
 	private Quaternion correctPlayerRot;
-	
+
+
 	// Update is called once per frame
 	void Update()
 	{

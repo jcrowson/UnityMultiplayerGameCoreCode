@@ -50,6 +50,7 @@
      <Compile Include="Assets\Marco Polo\Chat.cs" />
      <Compile Include="Assets\Marco Polo\FPSInputController.cs" />
      <Compile Include="Assets\Marco Polo\GameSetup.cs" />
+     <Compile Include="Assets\Marco Polo\IsometricCamera.cs" />
      <Compile Include="Assets\Marco Polo\MouseLook.cs" />
      <Compile Include="Assets\Marco Polo\NetworkCharacter.cs" />
      <Compile Include="Assets\Marco Polo\PlatformInputController.cs" />

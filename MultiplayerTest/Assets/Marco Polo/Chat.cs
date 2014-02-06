@@ -6,7 +6,7 @@ public class Chat : MonoBehaviour {
 	private bool textFieldEnabled = false;
 	private bool userHasHitReturn = false;
 	private string textFieldText = "";
-	private string chatHistoryText = "";
+	public string chatHistoryText = "";
 
 	// Use this for initialization
 	void Start () {
@@ -14,15 +14,12 @@ public class Chat : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	[RPC]
 	void Update () {
 
 		if(Input.GetKeyDown(KeyCode.Return)) {
 			textFieldEnabled = true;
 		}
 	}
-
-	[RPC]
 	void OnGUI () {
 
 		//Chat History
@@ -41,5 +38,20 @@ public class Chat : MonoBehaviour {
 			GUI.FocusControl("chatBox");
 			textFieldText = GUI.TextField(new Rect((Screen.width)/2,(Screen.height)/2, 400, 50), textFieldText, 140);
 		}
+	}
+
+	[RPC]
+	void Marco()
+	{
+		Debug.Log("Marco");
+		chatHistoryText = "James Nudged You!";
+		//update the view
+		Update ();
+	
+	}
+	[RPC]
+	void Polo()
+	{
+		Debug.Log("Polo");
 	}
 }
