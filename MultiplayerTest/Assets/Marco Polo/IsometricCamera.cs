@@ -10,9 +10,7 @@ public class IsometricCamera : MonoBehaviour {
 	public  int ScrollSpeed = 25;
 	
 	public  int DragSpeed = 100;
-	
-	
-	
+
 	public  int ZoomSpeed = 25;
 	
 	public  int ZoomMin = 25;
@@ -96,7 +94,7 @@ public class IsometricCamera : MonoBehaviour {
 		{
 			
 			// Move camera if mouse pointer reaches screen borders
-			
+			/*
 			if (Input.mousePosition.x < ScrollArea)
 				
 			{
@@ -134,7 +132,7 @@ public class IsometricCamera : MonoBehaviour {
 				translation += Vector3.forward * ScrollSpeed * Time.deltaTime;
 				
 			}
-			
+			*/
 		}
 		
 		

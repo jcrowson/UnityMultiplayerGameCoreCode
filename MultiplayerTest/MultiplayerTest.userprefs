@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Marco Polo/RandomMatchmaker.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/DefendingPlayerGUI.js">
     <Files>
-      <File FileName="Assets/Marco Polo/Chat.cs" Line="47" Column="37" />
-      <File FileName="Assets/Marco Polo/RandomMatchmaker.cs" Line="90" Column="65" />
-      <File FileName="Assets/Marco Polo/NetworkCharacter.cs" Line="9" Column="1" />
-      <File FileName="Assets/Marco Polo/GameSetup.cs" Line="9" Column="1" />
+      <File FileName="Assets/Plugins/DefendingPlayerGUI.js" Line="18" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

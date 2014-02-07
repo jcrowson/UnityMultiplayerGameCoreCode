@@ -46,19 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Monstergame\Resources\Plugins\CharacterCamera.js" />
-     <Compile Include="Assets\Monstergame\Resources\Plugins\CharacterControl.js" />
-     <Compile Include="Assets\Monstergame\Resources\Plugins\CollisionParticleEffect.js" />
-     <Compile Include="Assets\Monstergame\Resources\Plugins\CollisionSoundEffect.js" />
-     <Compile Include="Assets\Monstergame\Resources\Plugins\Foot.js" />
-     <Compile Include="Assets\Monstergame\Resources\Plugins\OrbitCamera.js" />
-     <Compile Include="Assets\Monstergame\Resources\Plugins\myThirdPersonController.js" />
+     <Compile Include="Assets\Marco Polo\DefendingPlayerGUI.js" />
+     <None Include="Assets\cu_cat\Props\prop_readme.txt" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.xml" />
+     <None Include="Assets\6by7\ProGrids\VersionInfo.txt" />
+     <None Include="Assets\Turret\Shaders\AlphaTest_Complete.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
+ <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D">
  <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\6by7\Shared\Code\SixBySeven">
+ <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
