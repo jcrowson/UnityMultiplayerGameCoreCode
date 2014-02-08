@@ -104,9 +104,9 @@ public class DefendingPlayerGUI : MonoBehaviour {
 					{
 						if(objectToBuild == 0)
 						{
-							GameObject turret = PhotonNetwork.Instantiate ("turret", lastHitObj.transform.position, Quaternion.identity, 0);
+							GameObject turret = PhotonNetwork.Instantiate ("SimpleTurret", lastHitObj.transform.position, Quaternion.identity, 0);
 							Vector3 currentPosition = turret.transform.position;
-							turret.transform.Rotate(270, 0, 0);
+							turret.transform.Rotate(0, 0, 0);
 						}
 						else
 						{

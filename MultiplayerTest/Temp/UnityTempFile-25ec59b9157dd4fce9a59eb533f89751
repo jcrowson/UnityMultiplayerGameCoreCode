@@ -48,6 +48,7 @@
 'Assets/Marco Polo/PlayerName.cs'
 'Assets/Marco Polo/RandomMatchmaker.cs'
 'Assets/Marco Polo/Turret.cs'
+'Assets/Marco Polo/TurretProjectile.cs'
 'Assets/Photon Unity Networking/Plugins/PhotonNetwork/CustomTypes.cs'
 'Assets/Photon Unity Networking/Plugins/PhotonNetwork/Enums.cs'
 'Assets/Photon Unity Networking/Plugins/PhotonNetwork/Extensions.cs'
