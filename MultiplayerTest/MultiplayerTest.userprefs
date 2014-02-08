@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/DefendingPlayerGUI.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Marco Polo/Turret.cs">
     <Files>
-      <File FileName="Assets/Plugins/DefendingPlayerGUI.js" Line="18" Column="4" />
+      <File FileName="Assets/Marco Polo/DefendingPlayerGUI.cs" Line="51" Column="2" />
+      <File FileName="Assets/Marco Polo/RandomMatchmaker.cs" Line="1" Column="1" />
+      <File FileName="Assets/Marco Polo/IsometricCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Marco Polo/Turret.cs" Line="17" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

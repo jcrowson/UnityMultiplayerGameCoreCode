@@ -4,36 +4,11 @@ using System.Collections;
 public class RandomMatchmaker : Photon.MonoBehaviour {
 
 	private PhotonView myPhotonView;
+	public static bool isRunner;
 
 	void Start()
 	{
 		PhotonNetwork.ConnectUsingSettings("0.1");
-	}
-	
-	void OnGUI()
-	{
-		GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
-
-		if (PhotonNetwork.isMasterClient) {
-
-			Screen.showCursor = true;
-			if (PhotonNetwork.connectionStateDetailed == PeerState.Joined)
-			{
-				if (GUILayout.Button("Spawn Cat"))
-				{
-					//Spawn a cat selected.
-				}
-				else if (GUILayout.Button("Spawn Crate"))
-				{
-					//Spawn a crate selected.
-				}
-			}
-		}
-		else {
-
-			Screen.showCursor = false;
-
-		}
 	}
 
 	void OnJoinedLobby()
@@ -49,14 +24,10 @@ public class RandomMatchmaker : Photon.MonoBehaviour {
 	void OnJoinedRoom()
 	{
 
-		if (PhotonNetwork.isMasterClient) {
-
-
-		}
-		else {
-
+		if (isRunner)
+		{
 			Vector3 playerSpawnPosition = new Vector3(0,10,0);
-
+			
 			GameObject player = PhotonNetwork.Instantiate("fpsController", playerSpawnPosition, Quaternion.identity, 0);
 			
 			FPSInputController fpsController = player.GetComponent<FPSInputController>();
@@ -75,15 +46,15 @@ public class RandomMatchmaker : Photon.MonoBehaviour {
 			chatScript.enabled = true;
 			
 			myPhotonView = player.GetComponent<PhotonView>();
-
+		}
+		else 
+		{
+			//Is playing as defender
 		}
 	}
 
 	void Update ()
 	{
-		if (Input.GetMouseButtonDown (0)) {
 
-			//GameObject turret = PhotonNetwork.Instantiate ("turret", Vector3.zero, Quaternion.identity, 0);
-		}
 	}
 }
