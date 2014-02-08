@@ -54,12 +54,10 @@
      <Compile Include="Assets\Plugins\Foot.js" />
      <Compile Include="Assets\Plugins\OrbitCamera.js" />
      <Compile Include="Assets\Plugins\myThirdPersonController.js" />
-     <None Include="Assets\cu_cat\Props\prop_readme.txt" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\release_history.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.xml" />
      <None Include="Assets\6by7\ProGrids\VersionInfo.txt" />
-     <None Include="Assets\Turret\Shaders\AlphaTest_Complete.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
  <Reference Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D">
  <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
