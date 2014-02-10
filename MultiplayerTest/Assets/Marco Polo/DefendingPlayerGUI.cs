@@ -63,6 +63,12 @@ public class DefendingPlayerGUI : MonoBehaviour {
 	
 	void Update () {
 
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			
+			PhotonNetwork.Disconnect();
+			Application.LoadLevel (0);
+		}
+
 		if (isRunner)
 		{
 

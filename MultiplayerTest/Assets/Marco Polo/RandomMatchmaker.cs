@@ -41,11 +41,9 @@ public class RandomMatchmaker : Photon.MonoBehaviour {
 			
 			MouseLook mouseLookCamera = player.GetComponentInChildren<MouseLook>();
 			mouseLookCamera.enabled = true;
-			
-			Chat chatScript = player.GetComponent<Chat>();
-			chatScript.enabled = true;
-			
-			myPhotonView = player.GetComponent<PhotonView>();
+
+			//myPhotonView = player.GetComponent<PhotonView>();
+
 		}
 		else 
 		{
@@ -56,5 +54,10 @@ public class RandomMatchmaker : Photon.MonoBehaviour {
 	void Update ()
 	{
 
+	}
+
+	void OnPhotonPlayerDisconnected(PhotonPlayer player)
+	{
+		Debug.Log("OnPhotonPlayerDisconnected: " + player);
 	}
 }

@@ -3,30 +3,66 @@ using System.Collections;
 
 public class Turret : MonoBehaviour {
 
-	public Transform target;
+	public GameObject turretProjectile;
+	public Transform myTarget;
+	public Transform bulletStartingPosition;
+
+	private float reloadTime = 1f;
+	private float turnSpeed = 5f;
+	private float firePauseTime = 0.25f;
+	public Transform turretTurn;
+
+	private float nextFireTime;
+	private float nextMoveTime;
+	private Quaternion desiredRotation;
+	private float aimError = 0.0f;
 
 
 	// Use this for initialization
 	void Start () {
 	
-		InvokeRepeating("FireProjectile", 5, 2);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		target = GameObject.FindGameObjectWithTag("Player").transform;
-		Vector3 look = target.transform.position - transform.position;
-		look.z = 0;
-		transform.LookAt(look);
+	
+		if(myTarget){
+			if(Time.time >= nextMoveTime){
+				CalculateAimPosition(myTarget.position);
+				turretTurn.rotation = Quaternion.Lerp(turretTurn.rotation, desiredRotation, Time.deltaTime*turnSpeed);
+				
+			}
+			
+			if(Time.time >= nextFireTime){
+				FireProjectile();
+			}
+		}
 	}
 
-	void FireProjectile () {
+	void OnTriggerEnter(Collider other){
+		if(other.gameObject.tag == "Player"){
+			nextFireTime = Time.time+(reloadTime*0.5f);
+			myTarget = other.gameObject.transform;
+		}
+	}
 
-		Vector3 projectileStartingPosition = new Vector3(this.transform.position.x + 2,transform.position.y,transform.position.z);
+	void OnTriggerExit(Collider other){
+		if(other.gameObject.transform == myTarget){
+			myTarget = null;
+		}
+	}
 
-		GameObject projectile = PhotonNetwork.Instantiate("TurretProjectile", projectileStartingPosition, transform.rotation, 0);
-		projectile.transform.LookAt(target.transform);
+	void CalculateAimPosition(Vector3 targetPos){
+		Vector3 aimPoint = new Vector3(targetPos.x - transform.position.x + aimError, targetPos.y - transform.position.y + aimError, targetPos.z - transform.position.z + aimError);
+		desiredRotation = Quaternion.LookRotation(aimPoint);
+	}
+	
+
+	void FireProjectile() {
+
+		nextFireTime = Time.time + reloadTime;
+		nextMoveTime = Time.time + firePauseTime;
+		Instantiate(turretProjectile, bulletStartingPosition.position, bulletStartingPosition.rotation);
 
 	}
 }

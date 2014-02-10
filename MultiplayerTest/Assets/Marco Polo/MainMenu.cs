@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour {
 
 	void OnGUI () {
 
+		Screen.showCursor = true;
+
 		GUI.contentColor = Color.white;
 			
 		GUI.Box(new Rect(50,50,250,250), "Running Game v0.1");

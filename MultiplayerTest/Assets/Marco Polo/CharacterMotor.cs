@@ -644,7 +644,7 @@ public class CharacterMotor : MonoBehaviour
         }
     }
 
-    void SetVelocity(Vector3 velocity)
+    public void SetVelocity(Vector3 velocity)
     {
         grounded = false;
         movement.velocity = velocity;

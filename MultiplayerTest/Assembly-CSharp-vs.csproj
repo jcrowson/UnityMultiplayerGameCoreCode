@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\6by7\ProGrids\Classes\pg_Util.cs" />
      <Compile Include="Assets\Marco Polo\CharacterMotor.cs" />
-     <Compile Include="Assets\Marco Polo\Chat.cs" />
      <Compile Include="Assets\Marco Polo\DefendingPlayerGUI.cs" />
      <Compile Include="Assets\Marco Polo\FPSInputController.cs" />
      <Compile Include="Assets\Marco Polo\IsometricCamera.cs" />
@@ -56,8 +55,8 @@
      <Compile Include="Assets\Marco Polo\MouseLook.cs" />
      <Compile Include="Assets\Marco Polo\NetworkCharacter.cs" />
      <Compile Include="Assets\Marco Polo\PlatformInputController.cs" />
-     <Compile Include="Assets\Marco Polo\PlayerName.cs" />
      <Compile Include="Assets\Marco Polo\RandomMatchmaker.cs" />
+     <Compile Include="Assets\Marco Polo\RunnerGUI.cs" />
      <Compile Include="Assets\Marco Polo\Turret.cs" />
      <Compile Include="Assets\Marco Polo\TurretProjectile.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
@@ -99,11 +98,11 @@
  <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
- <Reference Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D">
- <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
- </Reference>
  <Reference Include="Assets\6by7\Shared\Code\SixBySeven">
  <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D">
+ <HintPath>Assets\Photon Unity Networking\Plugins\PhotonNetwork\library\Photon3Unity3D.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
