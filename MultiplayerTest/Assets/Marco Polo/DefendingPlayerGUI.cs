@@ -6,6 +6,7 @@ public class DefendingPlayerGUI : MonoBehaviour {
 	public Transform placementPlanesRoot;
 	public Material hoverMat;
 	public LayerMask placementLayerMask;
+	public LayerMask turretLayerMask;
 
 	private Material originalMat;
 	private GameObject lastHitObj;
@@ -14,12 +15,13 @@ public class DefendingPlayerGUI : MonoBehaviour {
 	public GUIStyle guiStyle;
 	public static bool isRunner;
 	private bool isBuilding;
+
+	public Camera turretCamera;
+	public Camera mainCamera;
 	
 	// Use this for initialization
 	void Start () {
-
 		isBuilding = false;
-	
 	}
 
 	void OnGUI () {
@@ -36,7 +38,6 @@ public class DefendingPlayerGUI : MonoBehaviour {
 		else 
 		{
 			Screen.showCursor = true;
-
 
 			GUI.contentColor = Color.white;
 			
@@ -69,15 +70,15 @@ public class DefendingPlayerGUI : MonoBehaviour {
 			Application.LoadLevel (0);
 		}
 
+
 		if (isRunner)
 		{
 
-
+			//Is the runner, so do nothing!
 
 		}
 		else
 		{
-
 			if(isBuilding) {
 
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -103,7 +104,9 @@ public class DefendingPlayerGUI : MonoBehaviour {
 						lastHitObj = null;
 					}
 				}
-				
+
+
+				//Left Click to Build!
 				if(Input.GetMouseButtonDown(0) && lastHitObj) {
 					
 					if(lastHitObj.tag == "placementPlane_Open")
@@ -122,7 +125,8 @@ public class DefendingPlayerGUI : MonoBehaviour {
 						}
 					}
 				}
-				
+
+				//Right click to dismiss building!
 				if(Input.GetMouseButtonDown(1)) {
 
 					isBuilding = false;
@@ -132,6 +136,18 @@ public class DefendingPlayerGUI : MonoBehaviour {
 						lastHitObj = null;
 					}
 				}
+
+
+			} // end if building
+			else {
+
+				if(Input.GetMouseButtonDown(0)) {
+
+					//Trying to select an individual turret
+				}
+
+
+
 			}
 		}
 	}

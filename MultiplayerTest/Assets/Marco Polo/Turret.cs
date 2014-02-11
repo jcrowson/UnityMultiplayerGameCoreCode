@@ -17,13 +17,18 @@ public class Turret : MonoBehaviour {
 	private Quaternion desiredRotation;
 	private float aimError = 0.0f;
 
-
+	public Camera mainCamera;
+	public Camera turretCamera;
+	
 	// Use this for initialization
 	void Start () {
 	
+		//mainCamera.enabled = false;
+		//turretCamera.enabled = true;
 	}
 	
 	// Update is called once per frame
+
 	void Update () {
 	
 		if(myTarget){
